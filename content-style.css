@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Orbitron:wght@800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+}
+body {
+    background: rgba(0, 0, 0, 0.603) url(images/pexels-element-digital-1293269.jpg) repeat 100%;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    padding: 17% 2% 0 2%;
+    text-align: center;
+}
+.btn-again {
+    margin: 5% 0;
+    padding: 2% 3%;
+    background-color: rgb(7, 204, 7);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.left {
+    margin: 5% 0;
+}
+.number {
+    padding: 5% 0;
+}
+.guess {
+    padding: 2% 0;
+    background-color: transparent;
+    border: 2px solid rgb(7, 204, 7);
+    color: white;
+}
+.btn-check {
+    padding: 2% 3%;
+    background-color: rgb(7, 204, 7);
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+/* img {
+    background-image: url(images/pexels-cottonbro-4835419.jpg);
+} */
+
+.message {
+    margin: 5% 0;
+}
+.score-highscore {
+    display: flex;
+    justify-content: space-between;
+}
+footer a {
+    color: rgb(7, 204, 7);
+}
