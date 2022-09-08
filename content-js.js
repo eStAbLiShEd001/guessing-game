@@ -42,5 +42,6 @@ document.querySelector('.btn-again').addEventListener('click', function() {
     score = 20;
     document.querySelector('.score').textContent = score;
     document.querySelector('.message').textContent = 'Start guessing....'
+    document.querySelector('.number').textContent = '?';
 
 })
