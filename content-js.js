@@ -16,16 +16,21 @@ document.querySelector('.btn-check').addEventListener('click', function() {
             startGuessing(guess > secretNumber ?`${guess} is too high 😝!` : `${guess} is too low 😝!`);
             score--
             document.querySelector('.score').textContent = score;
+            document.querySelector('.guess').value = '';
+
         } else {
             document.querySelector('body').style.backgroundImage = 'url(images/game-sad-gamer-playing-shooter-video-games-powerful-computer-using-rgb-keyboard-gaming-room-defeated-man-with-headphones-streaming-online-cyber-performing-through-online-tournament.jpg)'
             startGuessing('You lost the game! 😭');
-           document.querySelector('.number').textContent = secretNumber + ' was the secret number. Press to reset.';
+            document.querySelector('.guess').value = '';
+            document.querySelector('.number').textContent = secretNumber + ' was the secret number. Press reset to start again!';
 
         }
     } else if (guess == secretNumber) {
         if (score > highscore) {
-            highscore = score * 2;
+            highscore = score * 5;
             document.querySelector('.highscore').textContent = highscore;
+            document.querySelector('.guess').value = '';
+
         }
         startGuessing(`Yayyyy, ${guess} is the correct number 🤑!`); 
         document.querySelector('body').style.backgroundImage = 'url(images/pexels-cottonbro-4835419.jpg)'
